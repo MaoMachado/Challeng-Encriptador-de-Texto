@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de texto</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+
+    <header class="header">
+      <img class="header__img" src="assets/Logo.png" alt="logo-alura">
+    </header>
+
+    <article class="encriptador">
+      <section class="encriptador__area__1">
+        <form id="formulario">
+          <textarea class="encriptador__area__1__textArea" name="encriptador__text__area" id="encriptador__text__area"
+            placeholder="Ingrese el texto aquí" cols="50"></textarea>
+
+          <div class="encriptador__area__1__contenido">
+            <p class="encriptador__area__1__parrafo">
+              <img class="encriptador__area__1__imgAlert" src="assets/alert-circle-outline.svg" alt="Alert">Solo letras
+              minúsculas y sin acentos
+            </p>
+            <input type="submit" value="Encriptar" id="encriptador" class="btn btnEncriptar">
+            <input type="submit" value="Desencriptar" id="desencriptar" class="btn btnDesencriptar">
+          </div>
+        </form>
+      </section>
+
+      <section class="encriptador__area__2">
+        <div class="encriptador__area__2__caja">
+          <div class="encriptador__area__2__contenido" id="contenido__encriptador__2">
+            <img class="encriptador__area__2__imagen" src="assets/Muñeco.png" alt="muñeco" title="Muñeco">
+            <h2 class="encriptador__area__2__titulo">Ningún mensaje fue encontrado</h2>
+            <p class="encriptador__area__2__parrafo">Ingrese el texto que deseas encriptar o desencriptar</p>
+          </div>
+        </div>
+        <textarea class="texto__desencriptado__area2" name="texto__desencriptado" id="texto__desencriptado"></textarea>
+        <input type="submit" value="Copiar" id="copiar" class="btn btn__copiar">
+      </section>
+    </article>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
